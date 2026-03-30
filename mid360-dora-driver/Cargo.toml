@@ -1,0 +1,19 @@
+[package]
+name = "mid360-dora-driver"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+arrow.workspace = true
+dora-node-api.workspace = true
+eyre.workspace = true
+futures.workspace = true
+livox-sdk2-sys = { path = "../livox-sdk2-sys" }
+mid360-dora-types = { path = "../mid360-dora-types" }
+
+[dev-dependencies]
+serial_test.workspace = true
+tempfile.workspace = true
+

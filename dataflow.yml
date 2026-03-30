@@ -1,0 +1,19 @@
+nodes:
+  - id: mid360-source
+    build: cargo build -p mid360-dora-driver
+    path: target/debug/mid360-dora-driver
+    outputs:
+      - points
+      - imu
+    env:
+      LIVOX_SDK2_CONFIG_PATH: ./config/mid360_config.json
+      MID360_PUBLISH_INTERVAL_MS: "100"
+      MID360_LIDAR_FRAME_ID: livox_frame
+      MID360_IMU_FRAME_ID: livox_imu
+
+  - id: sink
+    build: cargo build -p minimal-sink
+    path: target/debug/minimal-sink
+    inputs:
+      points: mid360-source/points
+      imu: mid360-source/imu

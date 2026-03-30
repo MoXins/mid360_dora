@@ -1,0 +1,20 @@
+# Rust/Cargo build artifacts
+/target/
+
+# Coverage / profiling artifacts
+*.profraw
+*.profdata
+*.gcda
+*.gcno
+
+# Local SDK / runtime overrides
+.env
+.env.*
+!.env.example
+config/*.local.json
+config/*.override.json
+
+# Editor / OS noise
+.DS_Store
+.idea/
+.vscode/

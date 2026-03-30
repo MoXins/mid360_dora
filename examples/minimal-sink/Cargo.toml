@@ -1,0 +1,12 @@
+[package]
+name = "minimal-sink"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+dora-node-api.workspace = true
+eyre.workspace = true
+mid360-dora-types = { path = "../../mid360-dora-types" }
+

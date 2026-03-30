@@ -18,3 +18,5 @@ config/*.override.json
 .DS_Store
 .idea/
 .vscode/
+
+out/

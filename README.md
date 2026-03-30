@@ -31,6 +31,7 @@ When SDK2 is not installed, the FFI crate builds a stub backend so unit tests st
 ## Run
 
 Install `Livox-SDK2` first, then update `config/mid360_config.json` for your host IP.
+The workspace now pulls `dora-node-api` from crates.io, so no sibling `dora` source checkout is required.
 
 ```bash
 cd mid360-dora
